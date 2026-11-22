@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	accountService "github.com/anyproto/any-sync/accountservice"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/nodeconf"
-	"github.com/anyproto/go-chash"
+	accountService "github.com/altercpre/aparok-sync/accountservice"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/nodeconf"
+	"github.com/altercpre/go-chash"
 )
 
 type mockNodeConf struct {

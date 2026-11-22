@@ -3,9 +3,9 @@ package inboxrpctest
 import (
 	"context"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
-	"github.com/anyproto/any-sync/coordinator/subscribeclient"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/coordinator/subscribeclient"
 )
 
 type TestSubsClientService interface {

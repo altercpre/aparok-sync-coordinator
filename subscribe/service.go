@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_subscribe/mock_subscribe.go github.com/anyproto/any-sync-coordinator/subscribe SubscribeService
+//go:generate mockgen -destination mock_subscribe/mock_subscribe.go github.com/altercpre/aparok-sync-coordinator/subscribe SubscribeService
 package subscribe
 
 import (
@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
 	"go.uber.org/zap"
 )
 

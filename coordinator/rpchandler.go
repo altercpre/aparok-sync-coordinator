@@ -6,17 +6,17 @@ import (
 	"slices"
 	"time"
 
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
-	"github.com/anyproto/any-sync/metric"
-	"github.com/anyproto/any-sync/net/peer"
-	"github.com/anyproto/any-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/metric"
+	"github.com/altercpre/aparok-sync/net/peer"
+	"github.com/altercpre/aparok-sync/nodeconf"
 	"github.com/gogo/protobuf/proto"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-coordinator/accountlimit"
-	"github.com/anyproto/any-sync-coordinator/acleventlog"
-	"github.com/anyproto/any-sync-coordinator/inbox"
-	"github.com/anyproto/any-sync-coordinator/spacestatus"
+	"github.com/altercpre/aparok-sync-coordinator/accountlimit"
+	"github.com/altercpre/aparok-sync-coordinator/acleventlog"
+	"github.com/altercpre/aparok-sync-coordinator/inbox"
+	"github.com/altercpre/aparok-sync-coordinator/spacestatus"
 )
 
 type rpcHandler struct {

@@ -2,7 +2,7 @@ package identityrepo
 
 import (
 	"context"
-	"github.com/anyproto/any-sync/identityrepo/identityrepoproto"
+	"github.com/altercpre/aparok-sync/identityrepo/identityrepoproto"
 )
 
 var okResp = &identityrepoproto.Ok{}

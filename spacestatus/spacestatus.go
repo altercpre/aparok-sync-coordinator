@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_spacestatus/mock_spacestatus.go github.com/anyproto/any-sync-coordinator/spacestatus SpaceStatus
+//go:generate mockgen -destination mock_spacestatus/mock_spacestatus.go github.com/altercpre/aparok-sync-coordinator/spacestatus SpaceStatus
 package spacestatus
 
 import (
@@ -6,17 +6,17 @@ import (
 	"errors"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
-	"github.com/anyproto/any-sync/util/crypto"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/util/crypto"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-coordinator/db"
-	"github.com/anyproto/any-sync-coordinator/deletionlog"
+	"github.com/altercpre/aparok-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/deletionlog"
 )
 
 const CName = "coordinator.spacestatus"

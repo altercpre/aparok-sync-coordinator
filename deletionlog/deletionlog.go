@@ -1,18 +1,18 @@
-//go:generate mockgen -destination mock_deletionlog/mock_deletionlog.go github.com/anyproto/any-sync-coordinator/deletionlog DeletionLog
+//go:generate mockgen -destination mock_deletionlog/mock_deletionlog.go github.com/altercpre/aparok-sync-coordinator/deletionlog DeletionLog
 package deletionlog
 
 import (
 	"context"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/anyproto/any-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/db"
 )
 
 const CName = "coordinator.deletionLog"

@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_accountlimit/mock_accountlimit.go github.com/anyproto/any-sync-coordinator/accountlimit AccountLimit
+//go:generate mockgen -destination mock_accountlimit/mock_accountlimit.go github.com/altercpre/aparok-sync-coordinator/accountlimit AccountLimit
 package accountlimit
 
 import (
@@ -6,19 +6,19 @@ import (
 	"errors"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/commonfile/fileproto"
-	"github.com/anyproto/any-sync/net/pool"
-	"github.com/anyproto/any-sync/net/rpc/rpcerr"
-	"github.com/anyproto/any-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/commonfile/fileproto"
+	"github.com/altercpre/aparok-sync/net/pool"
+	"github.com/altercpre/aparok-sync/net/rpc/rpcerr"
+	"github.com/altercpre/aparok-sync/nodeconf"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"storj.io/drpc"
 
-	"github.com/anyproto/any-sync-coordinator/db"
-	"github.com/anyproto/any-sync-coordinator/spacestatus"
+	"github.com/altercpre/aparok-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/spacestatus"
 )
 
 func New() AccountLimit {

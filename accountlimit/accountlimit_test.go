@@ -5,18 +5,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/net/peer/mock_peer"
-	"github.com/anyproto/any-sync/net/rpc/rpctest"
-	"github.com/anyproto/any-sync/nodeconf"
-	"github.com/anyproto/any-sync/nodeconf/mock_nodeconf"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/net/peer/mock_peer"
+	"github.com/altercpre/aparok-sync/net/rpc/rpctest"
+	"github.com/altercpre/aparok-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/nodeconf/mock_nodeconf"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/anyproto/any-sync-coordinator/db"
-	"github.com/anyproto/any-sync-coordinator/spacestatus"
-	"github.com/anyproto/any-sync-coordinator/spacestatus/mock_spacestatus"
+	"github.com/altercpre/aparok-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/spacestatus"
+	"github.com/altercpre/aparok-sync-coordinator/spacestatus/mock_spacestatus"
 )
 
 func TestAccountLimit_SetLimits(t *testing.T) {

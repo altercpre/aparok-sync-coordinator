@@ -1,14 +1,14 @@
-//go:generate mockgen -destination mock_coordinatorlog/mock_coordinatorlog.go github.com/anyproto/any-sync-coordinator/coordinatorlog CoordinatorLog
+//go:generate mockgen -destination mock_coordinatorlog/mock_coordinatorlog.go github.com/altercpre/aparok-sync-coordinator/coordinatorlog CoordinatorLog
 package coordinatorlog
 
 import (
 	"context"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
+	"github.com/altercpre/aparok-sync/app"
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/anyproto/any-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/db"
 )
 
 const CName = "coordinator.coordinatorlog"

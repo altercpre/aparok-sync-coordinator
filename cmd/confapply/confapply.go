@@ -4,12 +4,12 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/anyproto/any-sync-coordinator/config"
-	"github.com/anyproto/any-sync-coordinator/db"
-	"github.com/anyproto/any-sync-coordinator/nodeconfsource"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/nodeconf"
+	"github.com/altercpre/aparok-sync-coordinator/config"
+	"github.com/altercpre/aparok-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/nodeconfsource"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/nodeconf"
 	"go.uber.org/zap"
 	"gopkg.in/yaml.v3"
 	"os"
@@ -18,7 +18,7 @@ import (
 var log = logger.NewNamed("main")
 
 var (
-	flagConfigFile = flag.String("c", "etc/any-sync-coordinator.yml", "path to config file")
+	flagConfigFile = flag.String("c", "etc/aparok-sync-coordinator.yml", "path to config file")
 	flagVersion    = flag.Bool("v", false, "show version and exit")
 	flagHelp       = flag.Bool("h", false, "show help and exit")
 

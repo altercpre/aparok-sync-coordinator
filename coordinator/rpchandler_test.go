@@ -4,18 +4,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
-	"github.com/anyproto/any-sync/net/peer"
-	"github.com/anyproto/any-sync/nodeconf"
-	"github.com/anyproto/any-sync/util/crypto"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/net/peer"
+	"github.com/altercpre/aparok-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/util/crypto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.uber.org/mock/gomock"
 
-	"github.com/anyproto/any-sync-coordinator/accountlimit"
-	"github.com/anyproto/any-sync-coordinator/acleventlog"
-	"github.com/anyproto/any-sync-coordinator/spacestatus"
+	"github.com/altercpre/aparok-sync-coordinator/accountlimit"
+	"github.com/altercpre/aparok-sync-coordinator/acleventlog"
+	"github.com/altercpre/aparok-sync-coordinator/spacestatus"
 )
 
 func TestRpcHandler_SpaceStatusCheckMany(t *testing.T) {

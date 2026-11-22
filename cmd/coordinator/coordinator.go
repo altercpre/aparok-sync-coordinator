@@ -11,36 +11,36 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/anyproto/any-sync/acl"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/consensus/consensusclient"
-	"github.com/anyproto/any-sync/metric"
-	"github.com/anyproto/any-sync/net/peerservice"
-	"github.com/anyproto/any-sync/net/pool"
-	"github.com/anyproto/any-sync/net/rpc/server"
-	"github.com/anyproto/any-sync/net/secureservice"
-	"github.com/anyproto/any-sync/net/transport/quic"
-	"github.com/anyproto/any-sync/net/transport/yamux"
-	"github.com/anyproto/any-sync/nodeconf"
-	"github.com/anyproto/any-sync/nodeconf/nodeconfstore"
+	"github.com/altercpre/aparok-sync/acl"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/consensus/consensusclient"
+	"github.com/altercpre/aparok-sync/metric"
+	"github.com/altercpre/aparok-sync/net/peerservice"
+	"github.com/altercpre/aparok-sync/net/pool"
+	"github.com/altercpre/aparok-sync/net/rpc/server"
+	"github.com/altercpre/aparok-sync/net/secureservice"
+	"github.com/altercpre/aparok-sync/net/transport/quic"
+	"github.com/altercpre/aparok-sync/net/transport/yamux"
+	"github.com/altercpre/aparok-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/nodeconf/nodeconfstore"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-coordinator/account"
-	"github.com/anyproto/any-sync-coordinator/accountlimit"
-	"github.com/anyproto/any-sync-coordinator/acleventlog"
-	"github.com/anyproto/any-sync-coordinator/config"
-	"github.com/anyproto/any-sync-coordinator/coordinator"
-	"github.com/anyproto/any-sync-coordinator/coordinatorlog"
-	"github.com/anyproto/any-sync-coordinator/db"
-	"github.com/anyproto/any-sync-coordinator/deletionlog"
-	"github.com/anyproto/any-sync-coordinator/fileusage"
-	"github.com/anyproto/any-sync-coordinator/identityrepo"
-	"github.com/anyproto/any-sync-coordinator/inbox"
-	"github.com/anyproto/any-sync-coordinator/invitestore"
-	"github.com/anyproto/any-sync-coordinator/nodeconfsource"
-	"github.com/anyproto/any-sync-coordinator/spacestatus"
-	"github.com/anyproto/any-sync-coordinator/subscribe"
+	"github.com/altercpre/aparok-sync-coordinator/account"
+	"github.com/altercpre/aparok-sync-coordinator/accountlimit"
+	"github.com/altercpre/aparok-sync-coordinator/acleventlog"
+	"github.com/altercpre/aparok-sync-coordinator/config"
+	"github.com/altercpre/aparok-sync-coordinator/coordinator"
+	"github.com/altercpre/aparok-sync-coordinator/coordinatorlog"
+	"github.com/altercpre/aparok-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/deletionlog"
+	"github.com/altercpre/aparok-sync-coordinator/fileusage"
+	"github.com/altercpre/aparok-sync-coordinator/identityrepo"
+	"github.com/altercpre/aparok-sync-coordinator/inbox"
+	"github.com/altercpre/aparok-sync-coordinator/invitestore"
+	"github.com/altercpre/aparok-sync-coordinator/nodeconfsource"
+	"github.com/altercpre/aparok-sync-coordinator/spacestatus"
+	"github.com/altercpre/aparok-sync-coordinator/subscribe"
 
 	// import this to keep govvv in go.mod on mod tidy
 	_ "github.com/ahmetb/govvv/integration-test/app-different-package/mypkg"
@@ -49,7 +49,7 @@ import (
 var log = logger.NewNamed("main")
 
 var (
-	flagConfigFile = flag.String("c", "etc/any-sync-coordinator.yml", "path to config file")
+	flagConfigFile = flag.String("c", "etc/aparok-sync-coordinator.yml", "path to config file")
 	flagVersion    = flag.Bool("v", false, "show version and exit")
 	flagHelp       = flag.Bool("h", false, "show help and exit")
 )

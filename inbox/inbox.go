@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_inbox/mock_inbox.go github.com/anyproto/any-sync-coordinator/inbox InboxService
+//go:generate mockgen -destination mock_inbox/mock_inbox.go github.com/altercpre/aparok-sync-coordinator/inbox InboxService
 package inbox
 
 import (
@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/anyproto/any-sync-coordinator/db"
-	"github.com/anyproto/any-sync-coordinator/subscribe"
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
-	"github.com/anyproto/any-sync/net/peer"
+	"github.com/altercpre/aparok-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/subscribe"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/net/peer"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

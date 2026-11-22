@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
-	"github.com/anyproto/any-sync/net/peer"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/net/peer"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

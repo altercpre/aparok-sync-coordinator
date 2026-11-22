@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
+	"github.com/altercpre/aparok-sync/app"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anyproto/any-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/db"
 )
 
 var ctx = context.Background()

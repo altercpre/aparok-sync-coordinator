@@ -1,18 +1,18 @@
-//go:generate mockgen -destination mock_eventlog/mock_eventlog.go github.com/anyproto/any-sync-coordinator/acleventlog AclEventLog
+//go:generate mockgen -destination mock_eventlog/mock_eventlog.go github.com/altercpre/aparok-sync-coordinator/acleventlog AclEventLog
 package acleventlog
 
 import (
 	"context"
 	"errors"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	"github.com/anyproto/any-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/db"
 )
 
 const CName = "coordinator.aclEventLog"

@@ -5,20 +5,20 @@ import (
 	"testing"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
-	"github.com/anyproto/any-sync/nodeconf"
-	"github.com/anyproto/any-sync/nodeconf/mock_nodeconf"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/nodeconf/mock_nodeconf"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.uber.org/mock/gomock"
 
-	"github.com/anyproto/any-sync-coordinator/accountlimit"
-	"github.com/anyproto/any-sync-coordinator/accountlimit/mock_accountlimit"
-	"github.com/anyproto/any-sync-coordinator/db"
-	"github.com/anyproto/any-sync-coordinator/spacestatus"
-	"github.com/anyproto/any-sync-coordinator/spacestatus/mock_spacestatus"
+	"github.com/altercpre/aparok-sync-coordinator/accountlimit"
+	"github.com/altercpre/aparok-sync-coordinator/accountlimit/mock_accountlimit"
+	"github.com/altercpre/aparok-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/spacestatus"
+	"github.com/altercpre/aparok-sync-coordinator/spacestatus/mock_spacestatus"
 )
 
 var ctx = context.Background()

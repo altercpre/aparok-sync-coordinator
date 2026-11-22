@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_invitestore/mock_invitestore.go github.com/anyproto/any-sync-coordinator/invitestore InviteStore
+//go:generate mockgen -destination mock_invitestore/mock_invitestore.go github.com/altercpre/aparok-sync-coordinator/invitestore InviteStore
 package invitestore
 
 import (
@@ -6,12 +6,12 @@ import (
 	"context"
 	"errors"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/anyproto/any-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/db"
 )
 
 const CName = "coordinator.invitestore"

@@ -3,8 +3,8 @@ package nodeconfsource
 import (
 	"fmt"
 
-	"github.com/anyproto/any-sync/nodeconf"
-	"github.com/anyproto/go-chash"
+	"github.com/altercpre/aparok-sync/nodeconf"
+	"github.com/altercpre/go-chash"
 )
 
 // validateTransition checks that the transition from the currently active

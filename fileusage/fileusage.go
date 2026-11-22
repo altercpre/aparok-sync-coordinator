@@ -1,4 +1,4 @@
-//go:generate mockgen -destination mock_fileusage/mock_fileusage.go github.com/anyproto/any-sync-coordinator/fileusage FileUsage
+//go:generate mockgen -destination mock_fileusage/mock_fileusage.go github.com/altercpre/aparok-sync-coordinator/fileusage FileUsage
 
 // Package fileusage owns the files-v2 storage-limits state (SYN-19): fileV2
 // brokers push absolute per-(space, identity) durable usage rows and pull the
@@ -11,17 +11,17 @@ import (
 	"slices"
 	"time"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/app/logger"
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
-	"github.com/anyproto/any-sync/nodeconf"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/app/logger"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/nodeconf"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.uber.org/zap"
 
-	"github.com/anyproto/any-sync-coordinator/accountlimit"
-	"github.com/anyproto/any-sync-coordinator/db"
-	"github.com/anyproto/any-sync-coordinator/spacestatus"
+	"github.com/altercpre/aparok-sync-coordinator/accountlimit"
+	"github.com/altercpre/aparok-sync-coordinator/db"
+	"github.com/altercpre/aparok-sync-coordinator/spacestatus"
 )
 
 const CName = "coordinator.fileUsage"

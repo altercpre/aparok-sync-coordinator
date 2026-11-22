@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/anyproto/any-sync/app"
-	"github.com/anyproto/any-sync/coordinator/coordinatorproto"
+	"github.com/altercpre/aparok-sync/app"
+	"github.com/altercpre/aparok-sync/coordinator/coordinatorproto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"storj.io/drpc"
