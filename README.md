@@ -1,26 +1,26 @@
-# Any-Sync Coordinator Node
+# Aparok Sync Coordinator Node
 Implementation of coordinator node from [`aparok-sync`](https://github.com/altercpre/aparok-sync) protocol.
 
 ## Building the source
 To ensure compatibility, please use Go version `1.22`.
 
-To build and run the Any-Sync Coordinator Node on your own server, follow these technical steps:
+To build and run the Aparok Sync Coordinator Node on your own server, follow these technical steps:
 
-1.  Clone the Any-Sync Coordinator Node repository to your local machine.
+1.  Clone the Aparok Sync Coordinator Node repository to your local machine.
 2.  Navigate to the root directory of the repository, where you will find a `Makefile`.
-3.  Run the following commands to install the required dependencies and build the Any-Sync Coordinator Node.
+3.  Run the following commands to install the required dependencies and build the Aparok Sync Coordinator Node.
     ```
     make deps
     make build
     ```
-4.  If there are no errors, the Any-Sync Coordinator Node will be built and can be found in the `./bin` directory.
+4.  If there are no errors, the Aparok Sync Coordinator Node will be built and can be found in the `./bin` directory.
 
 ## Running
-You will need a MongoDB in replica set mode to run Any-Sync Coordinator Node.
+You will need a MongoDB in replica set mode to run Aparok Sync Coordinator Node.
 
-Any-Sync Coordinator Node requires a configuration. You can generate configuration files for your nodes with [`aparok-sync-network`](https://github.com/altercpre/aparok-sync-tools) tool.
+Aparok Sync Coordinator Node requires a configuration. You can generate configuration files for your nodes with [`aparok-sync-network`](https://github.com/altercpre/aparok-sync-tools) tool.
 
-The following options are available for running the Any-Sync Coordinator Node:
+The following options are available for running the Aparok Sync Coordinator Node:
 
  - `-c` — path to config file (default `etc/aparok-sync-coordinator.yml`). 
  - `-v` — current version.
